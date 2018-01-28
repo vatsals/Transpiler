@@ -1,0 +1,209 @@
+{
+    "_nodetype": "FileAST", 
+    "coord": null, 
+    "ext": [
+        {
+            "_nodetype": "FuncDef", 
+            "body": {
+                "_nodetype": "Compound", 
+                "block_items": [
+                    {
+                        "_nodetype": "Decl", 
+                        "bitsize": null, 
+                        "coord": "examples/c_files/multi.c:2:6", 
+                        "funcspec": [], 
+                        "init": {
+                            "_nodetype": "Constant", 
+                            "coord": "examples/c_files/multi.c:2:8", 
+                            "type": "int", 
+                            "value": "1"
+                        }, 
+                        "name": "a", 
+                        "quals": [], 
+                        "storage": [], 
+                        "type": {
+                            "_nodetype": "TypeDecl", 
+                            "coord": "examples/c_files/multi.c:2:6", 
+                            "declname": "a", 
+                            "quals": [], 
+                            "type": {
+                                "_nodetype": "IdentifierType", 
+                                "coord": "examples/c_files/multi.c:2:2", 
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Decl", 
+                        "bitsize": null, 
+                        "coord": "examples/c_files/multi.c:2:11", 
+                        "funcspec": [], 
+                        "init": null, 
+                        "name": "b", 
+                        "quals": [], 
+                        "storage": [], 
+                        "type": {
+                            "_nodetype": "TypeDecl", 
+                            "coord": "examples/c_files/multi.c:2:11", 
+                            "declname": "b", 
+                            "quals": [], 
+                            "type": {
+                                "_nodetype": "IdentifierType", 
+                                "coord": "examples/c_files/multi.c:2:2", 
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Assignment", 
+                        "coord": "examples/c_files/multi.c:3:2", 
+                        "lvalue": {
+                            "_nodetype": "ID", 
+                            "coord": "examples/c_files/multi.c:3:2", 
+                            "name": "b"
+                        }, 
+                        "op": "=", 
+                        "rvalue": {
+                            "_nodetype": "BinaryOp", 
+                            "coord": "examples/c_files/multi.c:3:6", 
+                            "left": {
+                                "_nodetype": "ID", 
+                                "coord": "examples/c_files/multi.c:3:6", 
+                                "name": "a"
+                            }, 
+                            "op": "*", 
+                            "right": {
+                                "_nodetype": "ID", 
+                                "coord": "examples/c_files/multi.c:3:8", 
+                                "name": "b"
+                            }
+                        }
+                    }, 
+                    {
+                        "_nodetype": "FuncCall", 
+                        "args": {
+                            "_nodetype": "ExprList", 
+                            "coord": "examples/c_files/multi.c:4:9", 
+                            "exprs": [
+                                {
+                                    "_nodetype": "Constant", 
+                                    "coord": "examples/c_files/multi.c:4:9", 
+                                    "type": "string", 
+                                    "value": "\"The answer is: %d\""
+                                }, 
+                                {
+                                    "_nodetype": "ID", 
+                                    "coord": "examples/c_files/multi.c:4:29", 
+                                    "name": "b"
+                                }
+                            ]
+                        }, 
+                        "coord": "examples/c_files/multi.c:4:2", 
+                        "name": {
+                            "_nodetype": "ID", 
+                            "coord": "examples/c_files/multi.c:4:2", 
+                            "name": "printf"
+                        }
+                    }, 
+                    {
+                        "_nodetype": "If", 
+                        "cond": {
+                            "_nodetype": "BinaryOp", 
+                            "coord": "examples/c_files/multi.c:6:5", 
+                            "left": {
+                                "_nodetype": "ID", 
+                                "coord": "examples/c_files/multi.c:6:5", 
+                                "name": "a"
+                            }, 
+                            "op": "==", 
+                            "right": {
+                                "_nodetype": "ID", 
+                                "coord": "examples/c_files/multi.c:6:8", 
+                                "name": "b"
+                            }
+                        }, 
+                        "coord": "examples/c_files/multi.c:6:2", 
+                        "iffalse": null, 
+                        "iftrue": {
+                            "_nodetype": "Compound", 
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall", 
+                                    "args": {
+                                        "_nodetype": "ExprList", 
+                                        "coord": "examples/c_files/multi.c:7:10", 
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant", 
+                                                "coord": "examples/c_files/multi.c:7:10", 
+                                                "type": "string", 
+                                                "value": "\"The answer is: %d\""
+                                            }, 
+                                            {
+                                                "_nodetype": "ID", 
+                                                "coord": "examples/c_files/multi.c:7:30", 
+                                                "name": "c"
+                                            }
+                                        ]
+                                    }, 
+                                    "coord": "examples/c_files/multi.c:7:3", 
+                                    "name": {
+                                        "_nodetype": "ID", 
+                                        "coord": "examples/c_files/multi.c:7:3", 
+                                        "name": "printf"
+                                    }
+                                }
+                            ], 
+                            "coord": "examples/c_files/multi.c:6:1"
+                        }
+                    }, 
+                    {
+                        "_nodetype": "Return", 
+                        "coord": "examples/c_files/multi.c:14:2", 
+                        "expr": {
+                            "_nodetype": "Constant", 
+                            "coord": "examples/c_files/multi.c:14:9", 
+                            "type": "int", 
+                            "value": "0"
+                        }
+                    }
+                ], 
+                "coord": "examples/c_files/multi.c:1:1"
+            }, 
+            "coord": "examples/c_files/multi.c:1:5", 
+            "decl": {
+                "_nodetype": "Decl", 
+                "bitsize": null, 
+                "coord": "examples/c_files/multi.c:1:5", 
+                "funcspec": [], 
+                "init": null, 
+                "name": "main", 
+                "quals": [], 
+                "storage": [], 
+                "type": {
+                    "_nodetype": "FuncDecl", 
+                    "args": null, 
+                    "coord": "examples/c_files/multi.c:1:5", 
+                    "type": {
+                        "_nodetype": "TypeDecl", 
+                        "coord": "examples/c_files/multi.c:1:5", 
+                        "declname": "main", 
+                        "quals": [], 
+                        "type": {
+                            "_nodetype": "IdentifierType", 
+                            "coord": "examples/c_files/multi.c:1:1", 
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            }, 
+            "param_decls": null
+        }
+    ]
+}
